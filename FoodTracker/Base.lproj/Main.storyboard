@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vrl-hr-qhV" id="v9T-4X-swe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="gjv-y1-pBR">
@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="awu-v9-oIQ" id="Mh7-dO-kHn"/>
                                     <outlet property="photoImageView" destination="gjv-y1-pBR" id="Ji3-d9-xtX"/>
                                     <outlet property="ratingControl" destination="t9U-hj-rvQ" id="cxX-zh-m0h"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="aKX-N2-bqi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,7 +67,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRv-jK-dKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="119.2" y="104.7976011994003"/>
+            <point key="canvasLocation" x="218" y="-284"/>
         </scene>
         <!--New meal-->
         <scene sceneID="tne-QT-ifu">
@@ -80,7 +81,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gw8-mJ-flZ">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gw8-mJ-flZ">
                                 <rect key="frame" x="16" y="84" width="343" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xnb-s6-Mne">
@@ -150,7 +151,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2274.4000000000001" y="120.98950524737631"/>
+            <point key="canvasLocation" x="2260" y="-285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DEG-mu-U2o">
@@ -168,7 +169,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bm-6x-4hL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-820" y="104.7976011994003"/>
+            <point key="canvasLocation" x="-791" y="-285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4YM-vm-6FW">
@@ -192,4 +193,7 @@
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aKX-N2-bqi"/>
+    </inferredMetricsTieBreakers>
 </document>
